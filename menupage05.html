@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta http-equiv="content-type" content-type="text/html" meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web project</title>
+	<link rel="stylesheet" href="project.css">
+</head>
+<body>
+	
+	
+	<div class="header">
+					<div class="logo">
+						<img src="logo01.png" alt="logo" ></div>
+					<div class="button">	
+						<a href="OderForm.html">Order Online</a></div>			
+	</div>
+	
+	
+			
+	<div class="notification">
+		<ul>
+			<li id="homepage"><a href="HomePage.html">Home</a></li>
+			<li id="menu"><a href="menupage01.html">BUFFET</a></Menu></a>
+			<li><a href="menupage02.html">MY<img src="https://cdn-icons-png.flaticon.com/512/166/166538.png" style="height: 30px; width: 30px;">MEALS</a></li>
+				
+			<li class="list2"><a href="#">TREATS</a>
+				<div class="list2value">
+                    <a href="menupage03.html">DRINKS</a>
+                    <a href="menupage04.html">DESSERTS & SHAKES</a>	
+                    <a href="menupage05.html">SWEETS</a></div>
+			</li>
+			<li><a href="contactpage.html">ContactUs</a></li>
+		</ul>
+	</div><p class="menutitle">PREFECT SWEET TREAT</p>
+	<div class="menutable">
+		<div class="window01">
+				
+			<div class="soup1">
+				<div class="t01"><p>Donuts </p></div>
+				<div class="t03"><img src="https://cdn-creativehub.sgp1.cdn.digitaloceanspaces.com/pns/P_and_S_Ganache_Delight_fa531ee32a.jpg" alt="logo"><p>Ganache Delight<br><br><span id="price">LKR 250 </span></p><div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 250)">Add to Cart</button></div></div>
+				<div class="t03"><img src="https://cdn-creativehub.sgp1.cdn.digitaloceanspaces.com/pns/P_and_S_Chocolate_Donut_9e392d059d.jpg" alt="logo"><p>Chocolate Donuts<br><br><span id="price">LKR 300 </span></p><div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 300)">Add to Cart</button></div></div>
+				<div class="t03"><img src="https://cdn-creativehub.sgp1.cdn.digitaloceanspaces.com/pns/P_and_S_Chocolate_Eclair_837529cfcf.jpg" alt="logo"><p>Chocolate Eclair<br><br><span id="price">LKR 180 </span></p><div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 180)">Add to Cart</button></div></div>
+					
+			</div>
+			<hr>
+			<div class="soup2">
+				<div class="t01"><p>Muffin</p></div>
+				<div class="t03"><img src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Toffee-Nut-Muffin_1.jpeg" alt="logo"><p>Toffee Nut Muffin<br><br><span id="price">LKR 390 </span></p><div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 390)">Add to Cart</button></div></div>
+				<div class="t03"><img src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Blueberry-Muffin_6.jpeg" alt="logo"><p>Blueberry Muffin<br><br><span id="price">LKR 320 </span></p><div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 320)">Add to Cart</button></div></div>
+				<div class="t03"><img src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Lemon-Muffin_2.jpeg" alt="logo"><p>Lemon Muffin<br><br><span id="price">LKR 200 </span></p><div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 200)">Add to Cart</button></div></div>
+			</div>
+			<hr>
+			<div class="soup3">
+				<div class="t01"><p>Cookies & Brownies</p></div>
+				<div class="t03"><img src="https://www.cfacdn.com/img/order/menu/Online/Sides%26treats/PDP_CCCookie.png" alt="logo"><p>Chocolate Chunk Cookie <br><br><span id="price">LKR 150 </span></p><div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 150)">Add to Cart</button></div></div>
+				<div class="t03"><img src="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Treats/Treats%20PDP/031717_FudgeChunkBrownie_PDP.png" alt="logo"><p>Chocolate Fudge Brownie<br><span id="price">LKR 400 </span></p><div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 400)">Add to Cart</button></div></div>
+				<div class="t03"><img src="https://www.digitalassets.starbucks.eu/sites/starbucks-medialibrary/files/Triple-Chocolate-Cookie_0.jpeg" alt="logo"><p>Triple Chocolate Cookie<br><br><span id="price">LKR 160 </span></p><div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 160)">Add to Cart</button></div></div>
+					
+			</div>
+			<hr></div>
+			<div class="window02">
+				<div class="cart">
+					<div class="cart-controls">
+						<p class="menutitle">Cart</p>
+						<p> Total : Rs <span id="cart-total">0.00</span></p>
+						<button><a href="OderForm.html" style="text-decoration: none; color: white;">Checkout</a></button>
+						<button class="clear-cart" onclick="clearCart()">Clear Cart</button>
+						
+					</div>
+					
+				</div>
+			</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://cdn-icons-png.flaticon.com/512/3444/3444494.png" style="height: 30px; width: 30px;"></button>
+		<script>
+			let mybutton = document.getElementById("myBtn");
+			window.onscroll = function() {scrollFunction()};
+			
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+			</script>
+	</div>       
+    <footer >
+		<div class="footer">
+				<div class="container01">
+					<div class="item">
+						<img src="logo01.png" alt="drawing of a cat">
+					</div>
+					<div class="circle" style="animation-delay: 0s; transform: rotate(10deg);"></div>
+					<div class="circle" style="animation-delay: 2.5s; transform: rotate(40deg);"></div>
+					<div class="circle" style="animation-delay: 5s; transform: rotate(70deg);"></div>
+					<div class="circle" style="animation-delay: 7.5s; transform: rotate(110deg);"></div>
+				</div>
+					<div class="follow">
+						<p id="p">Follow Us</p>
+						<div class="icons">
+							<a href="https://www.facebook.com/"><img src="https://cdn-icons-png.flaticon.com/128/1051/1051309.png" alt="HTML tutorial" style="width:40px; height:40px; margin-left: 80px;"></a>
+							<a href="https://www.messenger.com/"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536540.png" alt="HTML tutorial" style="width:40px; height:40px;"></a>
+							<a href="https://www.tiktok.com/en/"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968812.png" alt="HTML tutorial" style="width:40px; height:40px;"></a>
+							<a href="https://www.instagram.com/"><img src="https://cdn-icons-png.flaticon.com/128/1419/1419647.png" alt="HTML tutorial" style="width:40px; height:40px;"></a>
+						</div>
+					</div>
+				
+					<div class="address">
+						<div class="address01"><img src="https://cdn-icons-png.flaticon.com/128/3179/3179068.png" style="height: 20px; width: 20px;">385/1,Negombo-Colombo Main Rd,<br>Wattala 11300<br>Sri Lanka</div>
+						<div class="address01"><img src="https://cdn-icons-png.flaticon.com/128/3059/3059446.png" style="height: 20px; width: 20px;"><br>+94 11 481 4466 / +94 11 293 6366</div>
+						<div class="address01"><img src="https://cdn-icons-png.flaticon.com/128/2099/2099199.png" style="height: 20px; width: 20px;"><br>info@kitchenrestaurant.lk</div>
+					</div>
+		</div>
+	</footer>  
+	<script src="script.js"></script>           
+</body>
+</html>            

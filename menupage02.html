@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<meta http-equiv="content-type" content-type="text/html" meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web project</title>
+	<link rel="stylesheet" href="project.css">
+</head>
+<body>
+	
+	
+	<div class="header">
+					<div class="logo">
+						<img src="logo01.png" alt="logo" ></div>
+					<div class="button">	
+						<a href="OderForm.html">Order Online</a></div>			
+	</div>
+	
+	
+			
+	<div class="notification">
+		<ul>
+			<li id="homepage"><a href="HomePage.html">Home</a></li>
+			<li id="menu"><a href="menupage01.html">BUFFET</a></Menu></a>
+			<li><a href="menupage02.html">MY<img src="https://cdn-icons-png.flaticon.com/512/166/166538.png" style="height: 30px; width: 30px;">MEALS</a></li>
+				
+			<li class="list2"><a href="#">TREATS</a>
+				<div class="list2value">
+					<a href="menupage03.html">DRINKS</a>
+					<a href="menupage04.html">DESSERTS & SHAKES</a>	
+					<a href="menupage05.html">SWEETS</a></div>
+			</li>
+			<li><a href="contactpage.html">ContactUs</a></li>
+		</ul>
+	</div><p class="menutitle">CHOOSE YOUR HAPPY</p>
+	<div class="menutable">
+		
+		<div class="window01">	
+		<div class="soup1">
+			<div class="t01"><p>HOT & CRISPY CHICKEN</p></div>
+			<div class="t02"><img src="https://www.mcdelivery.lk/lk/static/1670658867940/assets/94/products/3276.png?" alt="logo"><p>Crispy Chicken 05 PC<br><span id="price">LKR 2,060 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Crispy Chicken 05 PC', 2060)">Add to Cart</button></div></div>
+			<div class="t02"><img src="https://www.mcdelivery.lk/lk/static/1670658867940/assets/94/products/3274.png?" alt="logo"><p>Crispy Chicken 02 PC <br><span id="price">LKR 1,660 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Crispy Chicken 02 PC', 1660)">Add to Cart</button></div></div>
+			<div class="t02"><img src="https://www.mcdelivery.lk/lk/static/1670658867940/assets/94/products/3247.png?" alt="logo"><p>Spicy Wings 6 PC<br><span id="price">LKR 1,850 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Spicy Wings 06 PC', 1850)">Add to Cart</button></div></div>
+		</div>
+		<hr>
+		<div class="soup2">
+			<div class="t01"><p>BURGERS</p></div>
+			<div class="t02"><img src="https://olo-images-live.imgix.net/55/551e5568df59496aaf6a751b7b71eea8.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=459&h=291&fit=crop&fm=png32&s=c579d7a45eca16322b97c7db42887b9b" alt="logo"><p>Burger With Cheese <br><span id="price">LKR 1100 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 1100)">Add to Cart</button></div></div>
+			<div class="t02"><img src="https://www.mcdelivery.lk/lk/static/1670658867940/assets/94/products/2004.png?" alt="logo"><p>Chicken Burger<br><span id="price">LKR 1780 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 1780)">Add to Cart</button></div></div>
+			<div class="t02"><img src="https://olo-images-live.imgix.net/e3/e34eaab393ff49b9a58e67d8050e4b0c.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=459&h=291&fit=crop&fm=png32&s=12d84ed0cbcb5478dbf9307c4d9f0a7a" alt="logo"><p>Double Decker Burger<br><span id="price">LKR 1430 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 1430)">Add to Cart</button></div></div>
+		</div>
+		<hr>
+		<div class="soup3">
+			<div class="t01"><p>SNACKS</p></div>
+			<div class="t02"><img src="https://www.dunkindonuts.com/content/dam/dd/img/menu-redesign/snacks-and-wraps/HashBrowns_570x570.png" alt="logo"><p>CRISPY STRIPS 2PC<br><span id="price">LKR 560 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 560)">Add to Cart</button></div></div>
+			<div class="t02"><img src="https://www.mcdelivery.lk/lk/static/1670658867940/assets/94/products/2012.png?" alt="logo"><p>Chicken Nuggets 9 PC<br><span id="price">LKR 2080 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 2080)">Add to Cart</button></div></div>
+			<div class="t02"><img src="https://www.mcdelivery.lk/lk/static/1670658867940/assets/94/products/2011.png?" alt="logo"><p>Chicken Nuggets 6 PC <br><span id="price">LKR 1560 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 1560)">Add to Cart</button></div></div>
+		</div>
+		<hr>
+		<div class="soup4">
+			<div class="t01"><p>BREAKFAST MEALS</p></div>
+			<div class="t02"><img src="https://cdn.sanity.io/images/czqk28jt/prod_bk_us/2067d0c907362d5b308fa1fadf972683360e9d97-592x344.png?w=750&q=40&fit=max&auto=format" alt="logo"><p>Fully Loaded Croissan'wich - Bacon, Sausage, Ham<br><span id="price">LKR 1,300 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 1300)">Add to Cart</button></div></div>
+			<div class="t02"><img src="https://www.cfacdn.com/img/order/COM/Menu_Refresh/Breakfast/Breakfast%20PDP/_0000s_0004_ChickenSausageBurrito-pdp_1797v2_2880px_resize2.png" alt="logo"><p>Hash Brown Scramble Burrito<br><span id="price">LKR 1,080 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 1080)">Add to Cart</button></div></div>
+			<div class="t02"><img src="https://www.cfacdn.com/img/order/menu/Online/Breakfast/Biscuit_ChickenEggCheese_PROD_2182_rev17_RGB_1080px.png" alt="logo"><p>Chicken, Egg & Cheese Biscuit<br><span id="price">LKR 680 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 680)">Add to Cart</button></div></div>
+		</div>
+		<hr>
+		<div class="soup5">
+			<div class="t01"><p>Hot Favorites</p></div>
+			<div class="t02"><img src="https://www.subway.com/ns/images/menu/SRI/ENG/RPLC_TurkeyBreast_BrownEdge_B.jpg" alt="logo"><p>Devilled Chicken <br><span id="price">LKR 1500 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 1500)">Add to Cart</button></div></div>
+			<div class="t02"><img src="https://www.subway.com/ns/images/menu/SRI/ENG/RPLC_SWOCT_B.jpg" alt="logo"><p>Chicken Teriyaki<br><span id="price">LKR 1700 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 1700)">Add to Cart</button></div></div>
+			<div class="t02"><img src="https://www.subway.com/ns/images/menu/SRI/ENG/RPLC_OvenRoastedChicken_B.jpg" alt="logo"><p>Roasted Chicken<br><span id="price">LKR 1600 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 1600)">Add to Cart</button></div></div>
+		</div>
+		<hr>
+		<div class="soup6">
+			<div class="t01"><p>PROMOTION & BUNDLE MEALS</p></div>
+			<div class="t02"><img src="https://olo-images-live.imgix.net/d4/d460f30161694845b344c1c93efc1dec.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=459&h=291&fit=crop&fm=png32&s=2e191cc8c10bce9932f36ac94136234a" alt="logo"><p>5 Piece - Hand-Breaded Chicken Tenders™ Combo<br><span id="price">LKR 2400 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 2400)">Add to Cart</button></div></div>
+			<div class="t02"><img src="https://www.mcdelivery.lk/lk/static/1670658867940/assets/94/products/1103.png?" alt="logo"><p>20 Pcs Mc Wings Box<br><span id="price">LKR 1900 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 1900)">Add to Cart</button></div></div>
+			<div class="t02"><img src="https://olo-images-live.imgix.net/57/57da285e94de453d9cc9bfe4fd81c051.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=459&h=291&fit=crop&fm=png32&s=9d6da4b3cd381be0c233e2fe91dcddd5" alt="logo"><p>20 Piece - Hand-Breaded Chicken Tenders Box<br><span id="price">LKR 3600 </span></p>
+				<div class="click"><button class="toggleButton" onclick="addToCart('Chicken and Sweet Corn Soup', 3600)">Add to Cart</button></div></div>
+		</div>
+		<hr></div>
+		<div class="window02">
+			<div class="cart">
+				<div class="cart-controls">
+					<p class="menutitle">Cart</p>
+					<p> Total : Rs <span id="cart-total">0.00</span></p>
+					<button><a href="OderForm.html" style="text-decoration: none; color: white;">Checkout</a></button>
+					<button class="clear-cart" onclick="clearCart()">Clear Cart</button>
+					
+				</div>
+				
+			</div>
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="https://cdn-icons-png.flaticon.com/512/3444/3444494.png" style="height: 30px; width: 30px;"></button>
+		<script>
+			let mybutton = document.getElementById("myBtn");
+			window.onscroll = function() {scrollFunction()};
+			
+			function scrollFunction() {
+			  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+				mybutton.style.display = "block";
+			  } else {
+				mybutton.style.display = "none";
+			  }
+			}
+			function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+			}
+			</script>
+	</div>       
+    <footer >
+		<div class="footer">
+				<div class="container01">
+					<div class="item">
+						<img src="logo01.png" alt="drawing of a cat">
+					</div>
+					<div class="circle" style="animation-delay: 0s; transform: rotate(10deg);"></div>
+					<div class="circle" style="animation-delay: 2.5s; transform: rotate(40deg);"></div>
+					<div class="circle" style="animation-delay: 5s; transform: rotate(70deg);"></div>
+					<div class="circle" style="animation-delay: 7.5s; transform: rotate(110deg);"></div>
+				</div>
+					<div class="follow">
+						<p id="p">Follow Us</p>
+						<div class="icons">
+							<a href="https://www.facebook.com/"><img src="https://cdn-icons-png.flaticon.com/128/1051/1051309.png" alt="HTML tutorial" style="width:40px; height:40px; margin-left: 80px;"></a>
+							<a href="https://www.messenger.com/"><img src="https://cdn-icons-png.flaticon.com/128/3536/3536540.png" alt="HTML tutorial" style="width:40px; height:40px;"></a>
+							<a href="https://www.tiktok.com/en/"><img src="https://cdn-icons-png.flaticon.com/128/5968/5968812.png" alt="HTML tutorial" style="width:40px; height:40px;"></a>
+							<a href="https://www.instagram.com/"><img src="https://cdn-icons-png.flaticon.com/128/1419/1419647.png" alt="HTML tutorial" style="width:40px; height:40px;"></a>
+						</div>
+					</div>
+				
+					<div class="address">
+						<div class="address01"><img src="https://cdn-icons-png.flaticon.com/128/3179/3179068.png" style="height: 20px; width: 20px;">385/1,Negombo-Colombo Main Rd,<br>Wattala 11300<br>Sri Lanka</div>
+						<div class="address01"><img src="https://cdn-icons-png.flaticon.com/128/3059/3059446.png" style="height: 20px; width: 20px;"><br>+94 11 481 4466 / +94 11 293 6366</div>
+						<div class="address01"><img src="https://cdn-icons-png.flaticon.com/128/2099/2099199.png" style="height: 20px; width: 20px;"><br>info@kitchenrestaurant.lk</div>
+					</div>
+		</div>
+	</footer>
+	<script src="script.js"></script>          
+            
+                   
+</body>
+</html>            
