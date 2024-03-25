@@ -7,8 +7,13 @@
 body{
 	padding: 0px 15px ;
 	background-color: rgb(175, 165, 165);
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
+main{
+	height: 3000px;
+}
 
 .header{
     display:flex;
@@ -374,6 +379,7 @@ li a:active{
 	color: red;
 }
 .sidetop{
+	color: #0a1427;
 	font-size: 30px;
 	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -543,8 +549,8 @@ li a:active{
 	  width: 100%;}
 }
 .address{
-	position: absolute;
-	transform: translateX(1100px);
+	float: right;
+	transform: translateY(-220px);
 	font-family:'Open Sans';
 	font-weight: 1000;
 	padding: 30px;
